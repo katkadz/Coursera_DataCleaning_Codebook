@@ -70,6 +70,6 @@ names(XSel)[names(XSel) == "fy"] = "activity"
 # for each activity and each subject.
 
 out<- aggregate(. ~ activity + subjectID, data = XSel, mean)
-write.table(out, "project_data.txt", row.name=FALSE) # header = TRUE
+write.table(out, "project_data.txt", row.name = FALSE) # header = TRUE
 
 
