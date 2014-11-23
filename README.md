@@ -65,6 +65,8 @@ Using the data set, the following processing was performed:
 - 'run_analysis.R': contains the code used for data cleaning 
 - 'project_data.txt': contains the tidy data (for exact content desctiption read below)
 
+==================================================================
+
 ###To load the data in R please use following commands:
 
 data <- read.table("project_data.txt", header = TRUE, check.names=FALSE)
