@@ -36,7 +36,7 @@ features<- read.delim("UCI HAR Dataset/features.txt",
                     colClasses = c("integer", "character"))
 
 # check dimensions, assig features names to variables in dataframe X
-if dim(features)[1]==dim(X)[2]{
+if (dim(features)[1]==dim(X)[2]){
         colnames(X) <- features[,2]
 } else{
         stop ("no. of features does not correspond to no. of columns in dataframe X")
@@ -70,6 +70,6 @@ names(XSel)[names(XSel) == "fy"] = "activity"
 # for each activity and each subject.
 
 out<- aggregate(. ~ activity + subjectID, data = XSel, mean)
-write.table(out, "project_data.txt") # header = TRUE
+write.table(out, "project_data.txt", row.name=FALSE) # header = TRUE
 
 
