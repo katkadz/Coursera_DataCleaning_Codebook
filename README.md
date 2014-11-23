@@ -23,11 +23,8 @@ Citation request:
 
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
-==================================================================
-
-
 ###Data description, data processing:
-======================================
+
 Full description of the experiment and data set description is available:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
@@ -45,25 +42,25 @@ Using the data set, the following processing was performed:
 - data summarisation: tidy dataset contains average of each variable for each activity and each subject
 
 ###For each record it is provided:
-====================================== 
+
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 - A 88-feature vector with time and frequency domain variables corresponding to mean value for each activity and each subject. 
 
 ###Notes: 
-======
+
 - Each record vector is a row on the text file.
 - Records are normalized and bounded within [-1,1].
 
 ###The dataset includes the following files:
-=========================================
+
 - 'README.txt'
 - 'codebook.txt': contains the description of the data variables
 - 'run_analysis.R': contains the code used for data cleaning 
 - 'project_data.txt': contains the tidy data (for exact content desctiption read below)
 
 ###To load the data in R please use following commands:
-========================================= 
+
 data <- read.table("project_data.txt", header = TRUE, check.names=FALSE)
 
 View(data)
